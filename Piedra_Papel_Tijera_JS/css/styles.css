@@ -1,0 +1,30 @@
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color: #F3717B;
+  text-align: center;
+}
+#titulo{
+  margin-top: 25px;
+  font-size: 35px;
+}
+button{
+  border-radius: 5px;
+  font-size: 25px;
+  color: white;
+  background-color: #d1bc6a;
+  border: none;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#pie{
+  padding: 10px;
+  background-color:  #d1bc6a;
+  font-size: 25px;
+  color: white;
+  border-radius: 15px;
+}
