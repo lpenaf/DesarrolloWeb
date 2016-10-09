@@ -1,0 +1,79 @@
+body{
+  font-family: "Open Sans", sans-serif;
+}
+header{
+  width: 100%;
+  height: 80px;
+}
+nav{
+  height: 80px;
+  width: 100%;
+  text-align: right;
+}
+header nav a{
+  color: #666970;
+  text-decoration: none;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+header nav a img{
+  width: 18px;
+  vertical-align: middle;
+}
+header nav button{
+  background-color: #4285f4;
+  color: white;
+  padding:9px;
+  font-weight: bold;
+  border-radius: 5%;
+  border: none;
+    
+}
+.main_section-googleImg{
+  margin-top: 50px;
+  text-align: center;
+}
+.main_section-searchInput{
+  margin-top: 5px;
+  text-align: center;
+}
+.main_section-searchInput input{
+  margin-top: 5px;
+  width: 425px;
+  height: 26px;
+}
+.main_section-button{
+  text-align: center;
+  margin-top: 25px;
+}
+.main_section-button button{
+  background-color: #f2f2f2;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+footer{
+  font-size: 14px;
+  font-weight: bolder;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: solid;
+  border-color: #ced3db;
+  border-width: 1px
+}
+footer div a{
+  padding: 5px;
+  text-decoration: none;
+  color: #666970;
+}
+footer .footer_div-left{
+  display: inline-block;
+  padding: 15px;
+}
+footer .footer_div-right{
+  display: inline-block;
+  float: right;
+  padding: 15px;
+}
