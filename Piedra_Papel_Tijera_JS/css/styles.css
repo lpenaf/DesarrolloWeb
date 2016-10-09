@@ -1,5 +1,5 @@
 body{
-  font-family: "Open Sans", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background-color: #F3717B;
   text-align: center;
 }
@@ -11,7 +11,7 @@ button{
   border-radius: 5px;
   font-size: 25px;
   color: white;
-  background-color: #d1bc6a;
+  background-color: #564f9e;
   border: none;
   margin-bottom: 25px;
   padding: 20px;
@@ -23,7 +23,7 @@ footer{
 }
 #pie{
   padding: 10px;
-  background-color:  #d1bc6a;
+  background-color:  #564f9e;
   font-size: 25px;
   color: white;
   border-radius: 15px;
