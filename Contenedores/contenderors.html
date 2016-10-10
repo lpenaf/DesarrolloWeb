@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!-- Esta etiqueta indica que estamos usando html 5 -->
+<html lang="en"> <!-- Con esta etiqueta iniciamos nuestro archivo html, abre al principio y cierra al final, también se indica el lenguaje de la página -->
+<head> <!-- head contien datos para el navegador, como el titulo de la pestaña, y que otrs archivos se van a utilizart -->
+  <meta charset="UTF-8">
+  <title>Contenedores</title>
+  <link rel="stylesheet" href="contenedores.css">
+</head>
+<body>
+  <header class="border"> <!-- Header se utiliza para el encabezado, normalmente engloba al nav (Funciona como un div) -->
+    <h1>header</h1>
+    <nav class="border-red"> <!-- Nav se utiliza para la barra de navegación, es donde se ponen las distintas secciones de la página para que que el usuario pueda navegar. -->
+      <h3>nav</h3>
+    </nav>
+  </header>
+  <main class="border"> <!-- En main vamos a poner nuestro conenido principal, engloba todas las secciones principales de nuestra página -->
+    <h2>main</h2>
+    <div>
+      <section class="border-red"> <!-- Los seccions se usan para delimitar secciones generales dentro de nuestra página, engloba un tema en común o un grupo de elementos parecidos. -->
+        <h3>section</h3>
+        <article class="border">
+          <h4>Article</h4>
+          <div class="border-red div"> <!-- Div es el contenedor más basico de todos, no indica lugar ni comportamiento, puede ser usado para cualquier cosa -->
+            <h5>Div</h5>
+          </div>
+        </article> <!-- Article se usa para delimitar un elemento específico dentro de un grupo de elementons parecidos (Como dentro de un seccion) -->
+      </section>
+      <aside class="border-red"> <!-- Aside se usa para crear una barra lateral que tenga contenido secundario -->
+        <h3>aside</h3>
+        <article>Article</article>
+      </aside>
+    </div>
+  </main>
+  <footer class="border"> <!-- Footer se utiliza para identificar la barra final de la página, generalmente se ponen terminos y condiciones o datos legales -->
+    <h2>footer</h2>
+  </footer>
+</body>
+</html>

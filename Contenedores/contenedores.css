@@ -1,0 +1,51 @@
+/*
+
+Las clases se marcan con un .(Las clases se usan para delimitar a un grupo específico de elementos) Se pueden agregar varias clases a un mismo elemento
+Los ids se marcan con un # (Los ids son únicos)
+Las etiquetas se escriben como en el html (Va a tomar a todas esas etiquetas )
+
+*/
+.border {
+  border:3px solid black;
+  margin:1px;
+}
+.border-red {
+  border:2px solid red;
+}
+body {
+  text-align: center;
+  font-family: verdana;
+}
+nav {
+  margin:5px;
+}
+main {
+  width:100%;
+  height:500px;
+}
+div {
+display:flex;
+}
+section {
+  width:70%;
+  /* px = pixeles
+  em = tamaño de fuente del padre default=16px
+  porcentaje 100% */
+  margin:5px;
+  height:400px;
+}
+aside {
+  width:30%;
+  margin:5px;
+  height: 400px;
+}
+aside article {
+  border:3px solid black;
+}
+
+.div {
+  margin: 30px 0;
+}
+.div h5 {
+  width: 100%;
+}
