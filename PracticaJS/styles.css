@@ -21,4 +21,9 @@ p{
 }
 button{
   margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+input{
+  height: 35px;
 }
