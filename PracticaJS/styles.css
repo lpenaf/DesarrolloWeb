@@ -1,22 +1,24 @@
 h1{
-  color: white;
+  color: #E8FCCF;
   font-size: 35px;
 }
 h2{
-  color: white;
+  color: #3DA35D;
 }
 body{
   font-family: "Segoe UI", sans-serif;
   text-align: center;
-  background-color: #449b8f;
+  background-color: #031926;
 }
 section{
-  border-color: white;
+  border-color: #96E072;
   border-style: solid;
   border-radius: 100px;
   margin-bottom: 20px;
 }
-
+p{
+  color: #D8CFAF;
+}
 button{
   margin-bottom: 20px;
 }
