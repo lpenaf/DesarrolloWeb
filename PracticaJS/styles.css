@@ -1,0 +1,11 @@
+h1{
+  color: green;
+}
+body{
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  background-color: lightgrey;
+}
+section{
+  margin-top: 20px;
+}
