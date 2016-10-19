@@ -53,6 +53,7 @@ document.getElementById('oracion').onkeypress= function(e){
 
 function palindromo(pal){
   var oracion = document.querySelector('#oracion').value;
+  oracion = oracion.toLowerCase();
   resp = "No es palindromo";
   i = 0, j = oracion.length-1;
   while(j > i){
