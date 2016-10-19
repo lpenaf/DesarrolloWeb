@@ -45,29 +45,28 @@ function fibonacci(){
   }
 }
 
+document.getElementById('oracion').onkeypress= function(e){
+  if(e.keyCode==13){
+    document.getElementById('pal').click();
+  }
+}
+
 function palindromo(pal){
   var oracion = document.querySelector('#oracion').value;
   resp = "No es palindromo";
-  var termine = false;
-  while(!termine){
-    i = 0;
-    j = oracion.length-1;
-    if(oracion[i] == " "){
+  i = 0, j = oracion.length-1;
+  while(j > i){
+    while(oracion[i] == " ")
       i++;
-    }
-    if (oracion[j] == " ") {
+    while(oracion[j] == " ")
       j--;
-    }
-    if(oracion[j] == oracion[i]){
-      if(i == j || j < i){
-        resp = "Si es palindromo";
-        termine = true;
-      }
-    }
-    else
-      termine = true;
-    i++;
-    j--;
+    if(oracion[i] == oracion[j]){
+      i++;
+      j--;
+    } else
+      i = j + 1;
   }
-  console.log(resp);
+  if(i == j)
+    resp = "Es palindromo";
+  alert(resp);
 }
