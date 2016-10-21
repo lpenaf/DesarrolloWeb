@@ -1,3 +1,4 @@
+//13/10/2016
 function cambiaColor(){
   var numero = prompt('Escribe un número');
 
@@ -45,13 +46,14 @@ function fibonacci(){
   }
 }
 
+//18/10/2016
 document.getElementById('oracion').onkeypress= function(e){
   if(e.keyCode==13){
     document.getElementById('pal').click();
   }
 }
 
-function palindromo(pal){
+function palindromo(){
   var oracion = document.querySelector('#oracion').value;
   oracion = oracion.toLowerCase();
   oracion = oracion.replace(/\s+/g, '');
@@ -62,9 +64,43 @@ function palindromo(pal){
       i++;
       j--;
     } else
-      i = j + 1;
+        break;
   }
-  if(i == j)
+  if(i == j  || i == j+1)
     resp = "Es palindromo";
+  console.log("i: " + i);
+  console.log("j: " + j);
   alert(resp);
+}
+
+
+//20/10/2016
+document.getElementById('numeros').onkeypress= function(f){
+  if(f.keyCode==13){
+    document.getElementById('cons').click();
+  }
+}
+
+function repetidos() {
+  var texto = document.querySelector('#numeros').value;
+  var lista = texto.split(' ');
+  var i, j;
+  var nueva = [];
+  for(i = 0; i < lista.length; i++){
+    if(nueva.indexOf(lista[i]) == -1){ //Si el numero no se ha repetido
+      console.log("entre3 " + lista[i]);
+      for(j = 0; j < lista.length; j++){
+        if(j == i) //Para que no se evalúe consigo mismo
+          j++;
+        if(lista[i] == lista[j]){ //Si encuentra repetido
+          nueva.push(lista[i]); //Agrega a la nueva lista
+          break;
+          }
+        }
+      }
+  }
+  if(nueva.length == 0)
+    alert("No hay repetidos");
+  else
+    alert("Numeros repetidos: " + nueva.toString());
 }
