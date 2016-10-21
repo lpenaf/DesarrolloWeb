@@ -12,8 +12,8 @@ function cambiaColor(){
 }
 
 function contador(numero, letra) {
-  console.log(numero);
-  console.log(letra);
+  console.log("Este es el numero que ingresaste: " + numero);
+  console.log("Esta es la letra que ingresaste: " + letra);
 }
 
 /*Otra forma alterna a onClick de #boton
@@ -29,6 +29,12 @@ document.querySelector('#boton').onclick=function(){
   }
 }
 */
+
+document.getElementById('vueltasFib').onkeypress= function(e){
+  if(e.keyCode==13){
+    document.getElementById('fibon').click();
+  }
+}
 
 function fibonacci(){
   var vueltas = document.querySelector('#vueltasFib').value;
@@ -72,7 +78,6 @@ function palindromo(){
   console.log("j: " + j);
   alert(resp);
 }
-
 
 //20/10/2016
 document.getElementById('numeros').onkeypress= function(f){
